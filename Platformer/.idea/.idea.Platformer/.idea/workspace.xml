@@ -10,6 +10,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/RotateObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IRotateObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
       </list>
     </option>
@@ -52,7 +54,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739968359765</updated>
-      <workItem from="1739968368787" duration="829000" />
+      <workItem from="1739968368787" duration="1694000" />
+      <workItem from="1740128883999" duration="2759000" />
     </task>
     <servers />
   </component>
