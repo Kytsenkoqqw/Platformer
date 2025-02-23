@@ -28,14 +28,13 @@ public class CharacterBehaviour : MonoBehaviour, IRotateObject
 
         _animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
+        Sprint();
         Jump();
         ObjectRotate(horizontal);
-
-        // Проверяем, находится ли персонаж в воздухе
+        
         if (!_isJumping && IsGrounded())
         {
             _animator.SetBool("IsJump", false);
-            //_animator.SetBool("IsFall", false);
         }
     }
 
@@ -49,20 +48,33 @@ public class CharacterBehaviour : MonoBehaviour, IRotateObject
         }
     }
 
+    private void Sprint()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            _moveSpeed = 3;
+            _animator.SetBool("IsSprint", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            _animator.SetBool("IsSprint", false);
+            _moveSpeed = 1;
+        }
+    }
+
     private void FixedUpdate()
     {
         if (_isJumping)
         {
-            if (_rigidbody.linearVelocity.y < 0) // Когда персонаж начинает падать
+            if (_rigidbody.linearVelocity.y < 0) 
             {
                 _animator.SetBool("IsJump", false);
                 _animator.SetBool("IsFall", true);
             }
 
-            if (IsGrounded()) // Если приземлился
+            if (IsGrounded()) 
             {
                 _isJumping = false;
-//                _animator.SetBool("IsFall", false);
             }
         }
     }

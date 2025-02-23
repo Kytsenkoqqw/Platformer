@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IRotateObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
       </list>
     </option>
   </component>
@@ -63,7 +64,8 @@
       <updated>1739968359765</updated>
       <workItem from="1739968368787" duration="1694000" />
       <workItem from="1740128883999" duration="7734000" />
-      <workItem from="1740140652949" duration="987000" />
+      <workItem from="1740140652949" duration="1852000" />
+      <workItem from="1740308293595" duration="2453000" />
     </task>
     <servers />
   </component>
