@@ -52,7 +52,7 @@ public class CharacterBehaviour : MonoBehaviour, IRotateObject
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            _moveSpeed = 3;
+            _moveSpeed = 2;
             _animator.SetBool("IsSprint", true);
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
