@@ -7,17 +7,10 @@ public class GameManager : MonoBehaviour
 {
    [SerializeField] private AudioSource _ambientForest;
 
-   [SerializeField] private Button _resumeButton;
-   [SerializeField] private Button _settingsButton;
-   [SerializeField] private Button _exitButton;
-
    [SerializeField] private GameObject _pauseMenu;
    [SerializeField] private GameObject _settingsMenu;
 
    [SerializeField] private Toggle _vSync;
-   
-   
-   
    
    private void Start()
    {
@@ -58,5 +51,10 @@ public class GameManager : MonoBehaviour
          Debug.Log("toggle is off");
          Application.targetFrameRate = -1;
       }
+   }
+
+   public void ExitGame()
+   {
+      Application.Quit();
    }
 }

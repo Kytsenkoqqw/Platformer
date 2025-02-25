@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using ObjectBehaviour;
 using UnityEngine;
 
@@ -6,19 +7,29 @@ public class CharacterBehaviour : MonoBehaviour, IRotateObject
 {
     private Animator _animator;
     private Rigidbody2D _rigidbody;
+
+    private HealthSystem _healthSystem;
     
     [SerializeField] private float _moveSpeed = 3f;
     [SerializeField] private float _jumpForce = 5f;
 
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private LayerMask _groundLayer;
+
+    [SerializeField] private PolygonCollider2D _attackArea;
+    
     
     private bool _isJumping;
+    private bool _isDeath;
 
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _healthSystem = GetComponent<HealthSystem>();
+
+        _healthSystem.OnDeath += Die;
+        _isDeath = false;
     }
     
     private void Update()
@@ -30,6 +41,7 @@ public class CharacterBehaviour : MonoBehaviour, IRotateObject
 
         Sprint();
         Jump();
+        Attack();
         ObjectRotate(horizontal);
         
         if (!_isJumping && IsGrounded())
@@ -38,6 +50,22 @@ public class CharacterBehaviour : MonoBehaviour, IRotateObject
         }
     }
 
+    private void Attack()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            _animator.SetTrigger("Attack");
+            StartCoroutine(AttackDelay());
+        }
+    }
+
+    private IEnumerator AttackDelay()
+    {
+        _attackArea.enabled = true;
+        yield return new WaitForSeconds(1f);
+        _attackArea.enabled = false;
+    }
+    
     private void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
@@ -76,6 +104,22 @@ public class CharacterBehaviour : MonoBehaviour, IRotateObject
             {
                 _isJumping = false;
             }
+        }
+    }
+
+    private void OnDestroy()
+    {
+        _healthSystem.OnDeath -= Die;
+    }
+
+    private void Die()
+    {
+        _isDeath = true;
+
+        if (_isDeath)
+        {
+            _animator.SetTrigger("Death");
+            this.enabled = false;
         }
     }
 

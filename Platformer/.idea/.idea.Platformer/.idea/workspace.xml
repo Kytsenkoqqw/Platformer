@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@38fdc9b96878/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -17,8 +18,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/RotateObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IRotateObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SkeletonAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -75,7 +78,7 @@
       <workItem from="1740140652949" duration="1852000" />
       <workItem from="1740308293595" duration="3996000" />
       <workItem from="1740399553373" duration="5843000" />
-      <workItem from="1740479361985" duration="2860000" />
+      <workItem from="1740479361985" duration="7408000" />
     </task>
     <servers />
   </component>

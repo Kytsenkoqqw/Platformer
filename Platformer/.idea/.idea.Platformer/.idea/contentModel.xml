@@ -13,8 +13,14 @@
           <e p="Character" t="Include">
             <e p="CharacterBehaviour.cs" t="Include" />
           </e>
+          <e p="Enemy" t="Include">
+            <e p="BrittleArcher.cs" t="Include" />
+          </e>
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />
+          </e>
+          <e p="HealthSystem" t="Include">
+            <e p="HealthSystem.cs" t="Include" />
           </e>
           <e p="ObjectBehaviour" t="Include">
             <e p="IRotateObject.cs" t="Include" />
