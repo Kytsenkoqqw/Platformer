@@ -21,6 +21,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SkeletonAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IJumpable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IAttackable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IRotatable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterRotating.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttacking.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
       </list>
     </option>
@@ -78,7 +87,7 @@
       <workItem from="1740140652949" duration="1852000" />
       <workItem from="1740308293595" duration="3996000" />
       <workItem from="1740399553373" duration="5843000" />
-      <workItem from="1740479361985" duration="7408000" />
+      <workItem from="1740479361985" duration="9934000" />
     </task>
     <servers />
   </component>
@@ -152,5 +161,9 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1877" height="371" key="GridCell.Tab.3.right/0.0.1920.1032@0.0.1920.1032" timestamp="1740136134594" />
+    <state x="794" y="217" key="RiderGenerateDialog" timestamp="1740492641855">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="794" y="217" key="RiderGenerateDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1740492641855" />
   </component>
 </project>

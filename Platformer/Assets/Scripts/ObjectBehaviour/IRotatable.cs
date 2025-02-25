@@ -1,6 +1,6 @@
 ﻿namespace ObjectBehaviour
 {
-    public interface IRotateObject
+    public interface IRotatable
     {
         void ObjectRotate(float direction);
     }
