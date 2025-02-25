@@ -16,6 +16,7 @@ public class CharacterBehaviour : MonoBehaviour
         _jump = GetComponent<IJumpable>();
         _attack = GetComponent<IAttackable>();
         _rotation = GetComponent<IRotatable>();
+        
     }
     
     private void Update()

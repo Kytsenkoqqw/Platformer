@@ -1,16 +1,15 @@
+using System;
 using UnityEngine;
 
 public class BrittleArcher : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+   [SerializeField] private HealthSystem _healthSystem;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   private void OnCollisionEnter2D(Collision2D other)
+   {
+      if (other.gameObject.GetComponent<CharacterBehaviour>())
+      {
+         _healthSystem.TakeDamage(10);
+      }
+   }
 }
