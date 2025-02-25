@@ -24,6 +24,16 @@ public class GameManager : MonoBehaviour
       _ambientForest.Play();
    }
 
+   public void Resume()
+   {
+      _pauseMenu.SetActive(false);
+   }
+
+   public void CloseSettingsPanel()
+   {
+      _settingsMenu.SetActive(false);
+   }
+
    public void ShowPauseMenu()
    {
       _pauseMenu.SetActive(true);
@@ -35,15 +45,18 @@ public class GameManager : MonoBehaviour
       _settingsMenu.SetActive(true);
    }
 
-   public void OnToggleValueChanged(bool isOn)
-   {
-      if (isOn)
+   public void OnToggleValueChanged()
+   { 
+      if (_vSync.isOn)
       {
+         Debug.Log("toggle is on ");
          QualitySettings.vSyncCount = 0;
+         Application.targetFrameRate = 60;
       }
       else
       {
-         QualitySettings.vSyncCount = 1;
+         Debug.Log("toggle is off");
+         Application.targetFrameRate = -1;
       }
    }
 }
