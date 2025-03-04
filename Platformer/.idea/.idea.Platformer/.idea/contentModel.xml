@@ -17,8 +17,12 @@
             <e p="CharacterMovement.cs" t="Include" />
             <e p="CharacterRotating.cs" t="Include" />
           </e>
+          <e p="Collectables" t="Include">
+            <e p="TakeCoin.cs" t="Include" />
+            <e p="UpdateUICollectables.cs" t="Include" />
+          </e>
           <e p="Enemy" t="Include">
-            <e p="BrittleArcher.cs" t="Include" />
+            <e p="CadaverMovement.cs" t="Include" />
           </e>
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />

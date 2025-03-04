@@ -18,16 +18,7 @@ namespace Character
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Attack");
                 _animator.SetTrigger("Attack");
-            }
-        }
-
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            if (other.gameObject.GetComponent<BrittleArcher>())
-            {
-                _healthSystem.TakeDamage(30);
             }
         }
     }
