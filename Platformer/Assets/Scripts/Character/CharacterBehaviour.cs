@@ -24,6 +24,7 @@ public class CharacterBehaviour : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
 
         // Взаимодействие с системами через интерфейсы
+        _movement.Sprint();
         _movement.Move();
         _attack.Attack();
         _jump.Jump();
