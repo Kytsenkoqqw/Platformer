@@ -630,8 +630,9 @@ MonoBehaviour:
   _ambientForest: {fileID: 109201193}
   _pauseMenu: {fileID: 387368529}
   _settingsMenu: {fileID: 1206427043}
-  _vSync: {fileID: 809912818}
   _loseGameMenu: {fileID: 942898245}
+  _vSync: {fileID: 809912818}
+  _soundToggle: {fileID: 1369140008}
 --- !u!1 &243827568
 GameObject:
   m_ObjectHideFlags: 0
@@ -6985,10 +6986,10 @@ MonoBehaviour:
       - m_Target: {fileID: 109201195}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnToggleValueChanged
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 809912818}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6997,10 +6998,10 @@ MonoBehaviour:
       - m_Target: {fileID: 109201195}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnToggleValueChanged
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1369140008}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

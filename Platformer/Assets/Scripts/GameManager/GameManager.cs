@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,10 +11,10 @@ public class GameManager : MonoBehaviour
 
    [SerializeField] private GameObject _pauseMenu;
    [SerializeField] private GameObject _settingsMenu;
+   [SerializeField] private GameObject _loseGameMenu;
 
    [SerializeField] private Toggle _vSync;
-
-   [SerializeField] private GameObject _loseGameMenu;
+   [SerializeField] private Toggle _soundToggle;
    
    
    private void Start()
@@ -64,6 +65,23 @@ public class GameManager : MonoBehaviour
       {
          Debug.Log("toggle is off");
          Application.targetFrameRate = -1;
+      }
+
+      if (EventSystem.current.currentSelectedGameObject == _soundToggle.gameObject)
+      {
+         if (_soundToggle.isOn)
+         {
+            Debug.Log("Ambient sound ON");
+            if (!_ambientForest.isPlaying) // Чтобы не перезапускать
+            {
+               _ambientForest.Play();
+            }
+         }
+         else
+         {
+            Debug.Log("Ambient sound OFF");
+            _ambientForest.Stop();
+         }
       }
    }
 

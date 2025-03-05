@@ -42,8 +42,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +103,7 @@
       <workItem from="1740479361985" duration="11789000" />
       <workItem from="1741079113851" duration="6391000" />
       <workItem from="1741088180722" duration="9945000" />
-      <workItem from="1741171716912" duration="6770000" />
+      <workItem from="1741171716912" duration="8001000" />
     </task>
     <servers />
   </component>
