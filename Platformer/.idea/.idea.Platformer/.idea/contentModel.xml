@@ -13,6 +13,7 @@
           <e p="Character" t="Include">
             <e p="CharacterAttack.cs" t="Include" />
             <e p="CharacterBehaviour.cs" t="Include" />
+            <e p="CharacterDie.cs" t="Include" />
             <e p="CharacterJumping.cs" t="Include" />
             <e p="CharacterMovement.cs" t="Include" />
             <e p="CharacterRotating.cs" t="Include" />
@@ -22,7 +23,12 @@
             <e p="UpdateUICollectables.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
-            <e p="CadaverMovement.cs" t="Include" />
+            <e p="EnemyAttack.cs" t="Include" />
+            <e p="VampireBatChasing.cs" t="Include" />
+            <e p="WaypointMovement.cs" t="Include" />
+          </e>
+          <e p="FPS" t="Include">
+            <e p="FPSCounter.cs" t="Include" />
           </e>
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />
@@ -32,6 +38,7 @@
           </e>
           <e p="ObjectBehaviour" t="Include">
             <e p="IAttackable.cs" t="Include" />
+            <e p="IDieable.cs" t="Include" />
             <e p="IJumpable.cs" t="Include" />
             <e p="IMovement.cs" t="Include" />
             <e p="IRotatable.cs" t="Include" />

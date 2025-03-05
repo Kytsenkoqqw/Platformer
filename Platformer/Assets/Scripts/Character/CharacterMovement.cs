@@ -13,7 +13,7 @@ namespace Character
         {
             _animator = GetComponent<Animator>();
         }
-
+        
         public void Move()
         {
             float horizontal = Input.GetAxis("Horizontal");

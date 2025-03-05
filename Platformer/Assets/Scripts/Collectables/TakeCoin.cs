@@ -7,12 +7,18 @@ namespace Collectables
 {
     public class TakeCoin : MonoBehaviour
     {
-        public Action OnTakeCoin;
+        [SerializeField] private TextMeshProUGUI _coinText;
+        [SerializeField] private int _coinValue;
+        
+        
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player") )
             {
-                OnTakeCoin?.Invoke();
+                _coinValue++;
+                _coinText.text = _coinValue.ToString();
+                Destroy(gameObject);
             }
         }
     }

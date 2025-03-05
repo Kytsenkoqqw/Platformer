@@ -1,4 +1,5 @@
 using System;
+using ObjectBehaviour;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,5 +38,10 @@ public class HealthSystem : MonoBehaviour
     public void Die()
     {
         OnDeath?.Invoke();
+        
+        if (TryGetComponent<IDieable>(out var dieable))
+        {
+            dieable.Die();
+        }
     }
 }

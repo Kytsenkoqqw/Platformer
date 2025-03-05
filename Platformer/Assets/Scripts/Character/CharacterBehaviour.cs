@@ -16,7 +16,6 @@ public class CharacterBehaviour : MonoBehaviour
         _jump = GetComponent<IJumpable>();
         _attack = GetComponent<IAttackable>();
         _rotation = GetComponent<IRotatable>();
-        
     }
     
     private void Update()
@@ -29,5 +28,10 @@ public class CharacterBehaviour : MonoBehaviour
         _attack.Attack();
         _jump.Jump();
         _rotation.ObjectRotate(horizontal);
+    }
+
+    public void StopLife()
+    {
+        this.enabled = false;
     }
 }

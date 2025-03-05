@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -11,10 +12,18 @@ public class GameManager : MonoBehaviour
    [SerializeField] private GameObject _settingsMenu;
 
    [SerializeField] private Toggle _vSync;
+
+   [SerializeField] private GameObject _loseGameMenu;
+   
    
    private void Start()
    {
       _ambientForest.Play();
+   }
+
+   public void RestartGame()
+   {
+      SceneManager.LoadScene(0);
    }
 
    public void Resume()
@@ -25,6 +34,11 @@ public class GameManager : MonoBehaviour
    public void CloseSettingsPanel()
    {
       _settingsMenu.SetActive(false);
+   }
+
+   public void ShowLoseMenu()
+   {
+      _loseGameMenu.SetActive(true);
    }
 
    public void ShowPauseMenu()

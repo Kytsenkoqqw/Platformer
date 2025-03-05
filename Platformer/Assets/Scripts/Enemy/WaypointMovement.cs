@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Enemy
 {
-    public class CadaverMovement : MonoBehaviour, IRotatable
+    public class WaypointMovement : MonoBehaviour, IRotatable
     {
         [SerializeField] private float _moveSpeed;
         [SerializeField] private Transform[] _waypoints;
@@ -22,6 +22,7 @@ namespace Enemy
         private void Update()
         {
             Move();
+            ObjectRotate(_direction.x);
         }
 
         private void Move()
@@ -49,7 +50,6 @@ namespace Enemy
                 _currentWaypointsIndex++;
                 if (_currentWaypointsIndex >= _waypoints.Length)
                 {
-                   // transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, _moveSpeed * Time.deltaTime);
                     _currentWaypointsIndex = 0;
                 }
 
