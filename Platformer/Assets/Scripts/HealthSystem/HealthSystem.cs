@@ -9,7 +9,7 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] private float _maxHealth;
     [SerializeField] private Image _hp;
     
-    [SerializeField] private float _currentHeath;
+    public float _currentHeath;
 
     private void Start()
     {

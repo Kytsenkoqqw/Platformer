@@ -24,6 +24,7 @@
           </e>
           <e p="Enemy" t="Include">
             <e p="EnemyAttack.cs" t="Include" />
+            <e p="EnemyDeath.cs" t="Include" />
             <e p="VampireBatChasing.cs" t="Include" />
             <e p="WaypointMovement.cs" t="Include" />
           </e>

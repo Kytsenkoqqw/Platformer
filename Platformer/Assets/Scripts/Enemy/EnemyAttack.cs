@@ -5,23 +5,29 @@ using UnityEngine;
 
 namespace Enemy
 {
-    public class EnemyAttack : MonoBehaviour, IAttackable
+    public class EnemyAttack : MonoBehaviour
     {
-
-        [SerializeField] private HealthSystem _healthSystem;
+        
         [SerializeField] private int _damage;
-        
-        
-        public void Attack()
+
+        public void Attack(HealthSystem targetHealth)
         {
-            _healthSystem.TakeDamage((_damage));
+            if (targetHealth != null) 
+            {
+               targetHealth.TakeDamage(_damage);
+            }
         }
 
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (other.gameObject.GetComponent<CharacterBehaviour>())
             {
-                Attack();
+                CharacterBehaviour character = other.gameObject.GetComponent<CharacterBehaviour>();
+                if (character != null)
+                {
+                    HealthSystem characterHealth = character.GetComponent<HealthSystem>();
+                    Attack(characterHealth); 
+                }
             }
         }
     }

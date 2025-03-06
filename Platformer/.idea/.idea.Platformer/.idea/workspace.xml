@@ -22,14 +22,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SkeletonAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IJumpable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IAttackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IRotatable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterRotating.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttacking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BrittleArcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FPS/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
@@ -37,13 +35,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/WaypointMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatChasing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IDieable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IAttackable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +104,8 @@
       <workItem from="1740479361985" duration="11789000" />
       <workItem from="1741079113851" duration="6391000" />
       <workItem from="1741088180722" duration="9945000" />
-      <workItem from="1741171716912" duration="8001000" />
+      <workItem from="1741171716912" duration="11914000" />
+      <workItem from="1741252652820" duration="2343000" />
     </task>
     <servers />
   </component>
