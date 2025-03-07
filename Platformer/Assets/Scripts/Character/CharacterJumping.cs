@@ -12,6 +12,7 @@ namespace Character
         [SerializeField] private Transform _groundCheck;
         [SerializeField] private LayerMask _groundLayer;
 
+
         private Animator _animator;
         private Rigidbody2D _rigidbody;
         private bool _isJumping;
@@ -29,6 +30,11 @@ namespace Character
                 _isJumping = false;
                 _animator.SetBool("IsJump", false);
             }
+        }
+
+        public void Jumping()
+        {
+            _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocity.x, _jumpForce);
         }
 
 

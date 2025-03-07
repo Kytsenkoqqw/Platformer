@@ -27,7 +27,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttacking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BrittleArcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FPS/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
@@ -36,15 +35,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatChasing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IDieable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IAttackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
       </list>
     </option>
   </component>
@@ -59,6 +59,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
@@ -106,6 +107,7 @@
       <workItem from="1741088180722" duration="9945000" />
       <workItem from="1741171716912" duration="11914000" />
       <workItem from="1741252652820" duration="2343000" />
+      <workItem from="1741346660711" duration="1534000" />
     </task>
     <servers />
   </component>
@@ -183,6 +185,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="794" y="217" key="RiderGenerateDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1741172813859" />
+    <state x="461" y="160" key="SettingsEditor" timestamp="1741349695605">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="461" y="160" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1741349695605" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1741098389195">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

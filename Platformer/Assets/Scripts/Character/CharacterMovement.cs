@@ -7,6 +7,8 @@ namespace Character
     public class CharacterMovement : MonoBehaviour, IMovement
     {
         [SerializeField] private float _moveSpeed;
+        [SerializeField] private Joystick _joystick;
+        
         private Animator _animator;
 
         private void Start()
@@ -16,7 +18,7 @@ namespace Character
         
         public void Move()
         {
-            float horizontal = Input.GetAxis("Horizontal");
+            float horizontal = _joystick.Horizontal;
             transform.position += new Vector3(horizontal, 0,0) * _moveSpeed * Time.deltaTime;
 
             _animator.SetFloat("Speed", Mathf.Abs(horizontal));

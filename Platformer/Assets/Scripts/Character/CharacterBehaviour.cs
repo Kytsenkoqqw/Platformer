@@ -9,6 +9,7 @@ public class CharacterBehaviour : MonoBehaviour
     private IJumpable _jump;
     private IAttackable _attack;
     private IRotatable _rotation;
+    [SerializeField] private Joystick _joystick;
 
     private void Start()
     {
@@ -20,7 +21,7 @@ public class CharacterBehaviour : MonoBehaviour
     
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
+        float horizontal = _joystick.Horizontal;
 
         // Взаимодействие с системами через интерфейсы
         _movement.Sprint();
