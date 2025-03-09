@@ -27,9 +27,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttacking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BrittleArcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FPS/FPSCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/CadaverMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/WaypointMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatAttack.cs" />
@@ -42,9 +40,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IAttackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
       </list>
     </option>
   </component>
@@ -108,6 +108,8 @@
       <workItem from="1741171716912" duration="11914000" />
       <workItem from="1741252652820" duration="2343000" />
       <workItem from="1741346660711" duration="1534000" />
+      <workItem from="1741349718272" duration="615000" />
+      <workItem from="1741521059188" duration="828000" />
     </task>
     <servers />
   </component>
@@ -189,9 +191,9 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="461" y="160" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1741349695605" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1741098389195">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1741521079935">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1741098389195" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1741521079935" />
   </component>
 </project>
