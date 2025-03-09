@@ -481,6 +481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6669eaaf1154df8aa388af5e2f97d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loot: {fileID: 6020026309807893306, guid: 9b9f2bbb0a69cc143913cb1193281710, type: 3}
+  _currensyManager: {fileID: 1176746548907675835, guid: 1982d26f2e3f3544a9c453d08c850a4f, type: 3}
 --- !u!4 &5624620242164234427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 46da199c5e3507142ab6b15ae18f2b52, type: 3}

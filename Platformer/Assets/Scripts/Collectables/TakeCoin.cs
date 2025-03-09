@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Security.Cryptography;
-using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Collectables
 {
     public class TakeCoin : MonoBehaviour
     {
-        public static Action OnTakeCoin;
-
+        [SerializeField] private CurrensyManager _currensyManager;
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Player") )
+            if (other.CompareTag("Player"))
             {
-                OnTakeCoin?.Invoke();
+                _currensyManager.AddCoin(5);
                 Destroy(gameObject);
             }
         }

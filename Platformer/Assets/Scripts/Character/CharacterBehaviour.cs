@@ -22,6 +22,7 @@ public class CharacterBehaviour : MonoBehaviour
     private void Update()
     {
         float horizontal = _joystick.Horizontal;
+        float horizontalWASD = Input.GetAxis("Horizontal");
 
         // Взаимодействие с системами через интерфейсы
         _movement.Sprint();
@@ -29,6 +30,7 @@ public class CharacterBehaviour : MonoBehaviour
         _attack.Attack();
         _jump.Jump();
         _rotation.ObjectRotate(horizontal);
+        _rotation.ObjectRotate(horizontalWASD);
     }
 
     public void StopLife()

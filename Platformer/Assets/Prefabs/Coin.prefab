@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4613083894539802663}
   - component: {fileID: 6200658147842420828}
   - component: {fileID: 4368596590283545225}
-  - component: {fileID: 8089921577338922233}
+  - component: {fileID: 3268106625032138947}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -176,7 +176,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8089921577338922233
+--- !u!114 &3268106625032138947
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,8 +185,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6020026309807893306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb58ec7cd9d40a187df0e113574fc43, type: 3}
+  m_Script: {fileID: 11500000, guid: d9e998b7ab444db89520569f2fae9126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinText: {fileID: 3245253197129715498, guid: 8f0624ec2c240114fb9248a05a38b76e, type: 3}
-  _coinValue: 0
+  OnTakeCoin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3315493620026538597, guid: 02a7872dc719579488454358bd265289, type: 3}
+        m_TargetAssemblyTypeName: Collectables.UpdateUICollectables, Assembly-CSharp
+        m_MethodName: UpdateUICoin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _currensyManager: {fileID: 1176746548907675835, guid: 1982d26f2e3f3544a9c453d08c850a4f, type: 3}
