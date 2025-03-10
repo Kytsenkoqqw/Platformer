@@ -12,15 +12,22 @@ namespace Character
         [SerializeField] private LayerMask _enemy;
         [SerializeField] private float _damage;
 
+        private bool _isAttack;
+
 
         private void Start()
         {
             _animator = GetComponent<Animator>();
         }
 
+        public void StartAttack()
+        {
+            _isAttack = true;
+        }
+
         public void Attack()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (_isAttack)
             {
                 _animator.SetTrigger("Attack");
                 Collider2D[] enemy = Physics2D.OverlapCircleAll(_pointAttack.transform.position, _radius, _enemy);
@@ -34,6 +41,8 @@ namespace Character
                         enemyHealth.TakeDamage(_damage); // Теперь урон получает враг
                     }
                 }
+
+                _isAttack = false;
             }
         }
 
