@@ -41,11 +41,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/CurrensyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
       </list>
     </option>
   </component>
@@ -110,7 +110,8 @@
       <workItem from="1741252652820" duration="2343000" />
       <workItem from="1741346660711" duration="1534000" />
       <workItem from="1741349718272" duration="615000" />
-      <workItem from="1741521059188" duration="7080000" />
+      <workItem from="1741521059188" duration="7142000" />
+      <workItem from="1741598139237" duration="2211000" />
     </task>
     <servers />
   </component>

@@ -2,18 +2,21 @@
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
+
 
 namespace Collectables
 {
     public class TakeCoin : MonoBehaviour
     {
-        [SerializeField] private CurrensyManager _currensyManager;
         
         private void OnTriggerEnter2D(Collider2D other)
         {
+            
             if (other.CompareTag("Player"))
             {
-                _currensyManager.AddCoin(5);
+                var randomNumber = Random.Range(1, 5);
+                CurrensyManager.instance.AddCoin(randomNumber);
                 Destroy(gameObject);
             }
         }

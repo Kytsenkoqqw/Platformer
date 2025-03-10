@@ -8,21 +8,25 @@ namespace Collectables
     public class UpdateUICollectables : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _coinText;
-        [SerializeField] private int _coinValue;
         [SerializeField] private CurrensyManager _currensyManager;
-
-
+        
+        
         private void Start()
         {
-            _coinText.text = _currensyManager.CointValue.ToString();
+            _coinText.text = _currensyManager.CoinValue.ToString();
+            _currensyManager.OnChangeValueCoin += UpdateUICoin;
         }
 
         private void UpdateUICoin()
         {
-            _coinValue++;
-            _coinText.text = _coinValue.ToString();
+            Debug.Log($"Обновляем UI: {_currensyManager.CoinValue}");
+            _coinText.text = _currensyManager.CoinValue.ToString();
         }
-        
+
+        private void OnDestroy()
+        {
+            _currensyManager.OnChangeValueCoin -= UpdateUICoin;
+        }
     }
 }
 
