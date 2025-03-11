@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &946748622379856789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2422412364614481611}
+  m_Layer: 6
+  m_Name: LootSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2422412364614481611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946748622379856789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.006, y: 0.053, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5624620242164234427}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1297964475396640429
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +350,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: 46da199c5e3507142ab6b15ae18f2b52, type: 3}
       insertIndex: -1
       addedObject: {fileID: 567123084182137448}
+    - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: 46da199c5e3507142ab6b15ae18f2b52, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2422412364614481611}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 46da199c5e3507142ab6b15ae18f2b52, type: 3}
       insertIndex: -1
@@ -482,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loot: {fileID: 6020026309807893306, guid: 9b9f2bbb0a69cc143913cb1193281710, type: 3}
-  _currensyManager: {fileID: 1176746548907675835, guid: 1982d26f2e3f3544a9c453d08c850a4f, type: 3}
+  _lootSpawnPoint: {fileID: 2422412364614481611}
 --- !u!4 &5624620242164234427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 46da199c5e3507142ab6b15ae18f2b52, type: 3}

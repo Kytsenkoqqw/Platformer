@@ -10,6 +10,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@578c7061e96d/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@38fdc9b96878/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ShowTransitionToLocationPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPS/FPSCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,7 +35,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatChasing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IDieable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IAttackable.cs" />
@@ -42,11 +42,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/CurrensyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraMoving.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/NewPositionCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/TransitionToLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/ShowTransitionToLocationPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +118,8 @@
       <workItem from="1741349718272" duration="615000" />
       <workItem from="1741521059188" duration="7142000" />
       <workItem from="1741598139237" duration="4105000" />
-      <workItem from="1741619803359" duration="875000" />
+      <workItem from="1741619803359" duration="876000" />
+      <workItem from="1741689620597" duration="4393000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,6 @@
 using System;
+using DG.Tweening;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,14 +9,22 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+   //Sound
    [SerializeField] private AudioSource _ambientForest;
 
+   //GameMenu
    [SerializeField] private GameObject _pauseMenu;
    [SerializeField] private GameObject _settingsMenu;
    [SerializeField] private GameObject _loseGameMenu;
 
+   //Toggle
    [SerializeField] private Toggle _vSync;
    [SerializeField] private Toggle _soundToggle;
+
+   //TransitionToLocation
+   [SerializeField] private GameObject _transitionToLocationPanel;
+  // [SerializeField] private TextMeshProUGUI _messageText;
+   [SerializeField] private Transform _cameraTransform;
    
    
    private void Start()
@@ -51,6 +61,20 @@ public class GameManager : MonoBehaviour
    {
       _pauseMenu.SetActive(false);
       _settingsMenu.SetActive(true);
+   }
+
+   public void StartTransitionToLocation()
+   {
+      _cameraTransform.transform.DOMove(new Vector3(9, 0.22f, -10), 2f);
+      _transitionToLocationPanel.transform.DOScale(new Vector3(0, 0, 0), 1f);
+      _transitionToLocationPanel.SetActive(false);
+      
+   }
+
+   public void CloseTransitionPanel()
+   {
+      _transitionToLocationPanel.transform.DOScale(new Vector3(0, 0, 0), 1f);
+      _transitionToLocationPanel.SetActive(false);
    }
 
    public void OnToggleValueChanged()

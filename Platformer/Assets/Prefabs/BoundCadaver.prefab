@@ -177,6 +177,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7852783083938099468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56787811588820006}
+  m_Layer: 6
+  m_Name: LootSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56787811588820006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7852783083938099468}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0644, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2085241913654537837}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7920862402768168460
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +366,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: ef3edc349cf6f5e48bfebcf5426d69f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5699919585172368130}
+    - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: ef3edc349cf6f5e48bfebcf5426d69f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 56787811588820006}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ef3edc349cf6f5e48bfebcf5426d69f4, type: 3}
       insertIndex: -1
@@ -446,7 +480,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233351843055519240}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94103c4fbfb2401f933973a0cd9c0e16, type: 3}
   m_Name: 
@@ -481,7 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loot: {fileID: 6020026309807893306, guid: 9b9f2bbb0a69cc143913cb1193281710, type: 3}
-  _currensyManager: {fileID: 1176746548907675835, guid: 1982d26f2e3f3544a9c453d08c850a4f, type: 3}
+  _lootSpawnPoint: {fileID: 56787811588820006}
 --- !u!4 &2085241913654537837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: ef3edc349cf6f5e48bfebcf5426d69f4, type: 3}
