@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Security.Cryptography;
+using Animation;
 using ObjectBehaviour;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ namespace Character
 {
     public class CharacterDie : MonoBehaviour, IDieable
     {
-        private Animator _animator; 
+        private AnimationManager _animationManager;
         private HealthSystem _healthSystem;
         private CharacterBehaviour _characterBehaviour;
         [SerializeField] private GameManager _gameManager;
@@ -17,7 +18,7 @@ namespace Character
         {
             _characterBehaviour = GetComponent<CharacterBehaviour>();
             _healthSystem = GetComponent<HealthSystem>();
-            _animator = GetComponent<Animator>();
+            _animationManager = GetComponent<AnimationManager>();
             _healthSystem.OnDeath += Die;
         }
 
@@ -34,7 +35,7 @@ namespace Character
         private IEnumerator Death()
         {
             _characterBehaviour.StopLife();
-            _animator.SetTrigger("Death");
+            _animationManager.PlayDeath();
             yield return new WaitForSeconds(3f);
             Destroy(gameObject);
             _gameManager.ShowLoseMenu();

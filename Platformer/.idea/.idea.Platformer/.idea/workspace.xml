@@ -34,17 +34,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/VampireBatChasing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IDieable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IAttackable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/UpdateUICollectables.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/CurrensyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/TakeCoin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraMoving.cs" />
@@ -52,6 +47,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/TransitionToLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/ShowTransitionToLocationPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +120,7 @@
       <workItem from="1741521059188" duration="7142000" />
       <workItem from="1741598139237" duration="4105000" />
       <workItem from="1741619803359" duration="876000" />
-      <workItem from="1741689620597" duration="4393000" />
+      <workItem from="1741689620597" duration="7521000" />
     </task>
     <servers />
   </component>

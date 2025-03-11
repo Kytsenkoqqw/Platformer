@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Timers;
+using Animation;
 using ObjectBehaviour;
 using UnityEngine;
 
@@ -9,12 +10,13 @@ namespace Character
     {
         [SerializeField] private float _moveSpeed;
         [SerializeField] private Joystick _joystick;
-        
-        private Animator _animator;
+        [SerializeField] private AudioSource _runSound;
+
+        private AnimationManager _animationManager;
 
         private void Start()
         {
-            _animator = GetComponent<Animator>();
+            _animationManager = GetComponent<AnimationManager>();
         }
 
         private void Update()
@@ -28,8 +30,7 @@ namespace Character
             float horizontal = _joystick.Horizontal;
             transform.position += new Vector3(horizontal, 0,0) * _moveSpeed * Time.deltaTime;
 
-            _animator.SetFloat("Speed", Mathf.Abs(horizontal));
-
+            _animationManager.PlayRun(horizontal);
         }
 
         public void MoveCharacter()
@@ -37,21 +38,13 @@ namespace Character
             float horizontal = Input.GetAxis("Horizontal");
             
             transform.position += new Vector3(horizontal, 0,0) * _moveSpeed * Time.deltaTime;
-            _animator.SetFloat("Speed", Mathf.Abs(horizontal));
+            _animationManager.PlayRun(horizontal);
         }
 
         public void Sprint()
         {
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                _animator.SetBool("IsSprint", true);
-                _moveSpeed = 2;
-            }
-            else
-            {
-                _animator.SetBool("IsSprint", false);
-                _moveSpeed = 1f;
-            }
+            bool isSprinting = Input.GetKey(KeyCode.LeftShift);
+            _animationManager.PlaySprint(isSprinting);
         }
     }
 }

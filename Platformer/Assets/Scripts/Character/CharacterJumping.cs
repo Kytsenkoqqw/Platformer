@@ -1,5 +1,6 @@
 ﻿
 using System;
+using Animation;
 using NUnit.Framework;
 using ObjectBehaviour;
 using UnityEngine;
@@ -13,14 +14,13 @@ namespace Character
         [SerializeField] private LayerMask _groundLayer;
 
 
-        private Animator _animator;
+        private AnimationManager _animationManager;
         private Rigidbody2D _rigidbody;
         private bool _isJumping;
 
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
-            _animator = GetComponent<Animator>();
         }
 
         private void FixedUpdate()
@@ -28,7 +28,7 @@ namespace Character
             if (IsGrounded() && _isJumping)
             {
                 _isJumping = false;
-                _animator.SetBool("IsJump", false);
+                _animationManager.PlayJump(false);
             }
         }
 
@@ -43,7 +43,8 @@ namespace Character
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
             {
                 _isJumping = true;
-                _animator.SetBool("IsJump", true);
+                _animationManager.PlayJump(true);
+
                 _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocity.x, _jumpForce);
             }
         }

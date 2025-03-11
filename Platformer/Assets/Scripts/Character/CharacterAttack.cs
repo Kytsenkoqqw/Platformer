@@ -1,4 +1,5 @@
 ﻿using System;
+using Animation;
 using ObjectBehaviour;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ namespace Character
 {
     public class CharacterAttack : MonoBehaviour, IAttackable
     {
-        private Animator _animator;
+        private AnimationManager _animationManager;
         [SerializeField] private GameObject _pointAttack;
         [SerializeField] private float _radius;
         [SerializeField] private LayerMask _enemy;
@@ -17,7 +18,7 @@ namespace Character
 
         private void Start()
         {
-            _animator = GetComponent<Animator>();
+            _animationManager = GetComponent<AnimationManager>();
         }
 
         public void StartAttack()
@@ -29,7 +30,7 @@ namespace Character
         {
             if (_isAttack)
             {
-                _animator.SetTrigger("Attack");
+                _animationManager.PlayAttack();
                 Collider2D[] enemy = Physics2D.OverlapCircleAll(_pointAttack.transform.position, _radius, _enemy);
 
                 foreach (Collider2D enemyGameObject in enemy)
