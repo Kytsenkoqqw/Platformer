@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using Animation;
 using NUnit.Framework;
 using ObjectBehaviour;
@@ -12,6 +11,7 @@ namespace Character
         [SerializeField] private float _jumpForce = 5f;
         [SerializeField] private Transform _groundCheck;
         [SerializeField] private LayerMask _groundLayer;
+        [SerializeField] private Joystick _joystick;
 
 
         private AnimationManager _animationManager;
@@ -21,6 +21,12 @@ namespace Character
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
+            _animationManager = GetComponent<AnimationManager>();
+        }
+
+        private void Update()
+        {
+            Jumping();
         }
 
         private void FixedUpdate()
@@ -32,12 +38,21 @@ namespace Character
             }
         }
 
+        //MobileJump
         public void Jumping()
         {
-            _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocity.x, _jumpForce);
+            float vertical = _joystick.Vertical;
+
+            // Проверяем, если джойстик тянут вверх достаточно сильно
+            if (IsGrounded() && vertical >= 0.5f) // 0.5f - оптимальное значение
+            {
+                _isJumping = true;
+                _animationManager.PlayJump(true);
+                _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocity.x, _jumpForce);
+            }
         }
 
-
+        //WASD Jump
         public void Jump()
         {
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())

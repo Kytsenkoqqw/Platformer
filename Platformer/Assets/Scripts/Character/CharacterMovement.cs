@@ -21,30 +21,63 @@ namespace Character
 
         private void Update()
         {
-            MoveCharacter();
+            //MoveCharacter();
         }
 
         //move on Joystick 
         public void Move()
         {
-            float horizontal = _joystick.Horizontal;
-            transform.position += new Vector3(horizontal, 0,0) * _moveSpeed * Time.deltaTime;
+            float horizontalMobile = _joystick.Horizontal;
 
-            _animationManager.PlayRun(horizontal);
+            if (Mathf.Abs(horizontalMobile)> 0.1f )
+            {
+                transform.position += new Vector3(horizontalMobile, 0,0) * _moveSpeed * Time.deltaTime;
+
+                _animationManager.PlayRun(horizontalMobile);
+            }
+            else
+            {
+                _animationManager.PlayRun(0);
+            }
+           
         }
 
+        //Move on WASD
         public void MoveCharacter()
         {
             float horizontal = Input.GetAxis("Horizontal");
-            
-            transform.position += new Vector3(horizontal, 0,0) * _moveSpeed * Time.deltaTime;
-            _animationManager.PlayRun(horizontal);
+
+            if (Mathf.Abs(horizontal) > 0.1f)
+            {
+                transform.position += new Vector3(horizontal, 0,0) * _moveSpeed * Time.deltaTime;
+                _animationManager.PlayRun(horizontal); 
+            }
+            else
+            {
+                _animationManager.PlayRun(0);
+            }
         }
 
         public void Sprint()
         {
             bool isSprinting = Input.GetKey(KeyCode.LeftShift);
-            _animationManager.PlaySprint(isSprinting);
+
+            if (isSprinting)
+            {
+                _moveSpeed = 2f;
+                _animationManager.PlaySprint(true);
+            }
+            else
+            {
+                _animationManager.PlaySprint(false);
+                _moveSpeed = 1f;
+            }
+        }
+
+        public void MobileSprint()
+        {
+            _moveSpeed = 2f;
+            _animationManager.PlaySprint(true);
         }
     }
 }

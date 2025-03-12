@@ -47,12 +47,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/TransitionToLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/ShowTransitionToLocationPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +120,8 @@
       <workItem from="1741521059188" duration="7142000" />
       <workItem from="1741598139237" duration="4105000" />
       <workItem from="1741619803359" duration="876000" />
-      <workItem from="1741689620597" duration="7521000" />
+      <workItem from="1741689620597" duration="7616000" />
+      <workItem from="1741781279864" duration="4833000" />
     </task>
     <servers />
   </component>
@@ -202,9 +203,9 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="461" y="160" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1741349695605" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1741521079935">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1741784801637">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1741521079935" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1741784801637" />
   </component>
 </project>
