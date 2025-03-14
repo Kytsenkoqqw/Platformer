@@ -13,27 +13,30 @@ namespace Character
         private HealthSystem _healthSystem;
         private CharacterBehaviour _characterBehaviour;
         [SerializeField] private GameManager _gameManager;
+        private CircleCollider2D _circleCollider2D;
         
         private void Start()
         {
             _characterBehaviour = GetComponent<CharacterBehaviour>();
+            _circleCollider2D = GetComponent<CircleCollider2D>();
             _healthSystem = GetComponent<HealthSystem>();
             _animationManager = GetComponent<AnimationManager>();
-            _healthSystem.OnDeath += Die;
+            _healthSystem.OnDeath += Death;
         }
 
         private void OnDestroy()
         {
-            _healthSystem.OnDeath -= Die;
+            _healthSystem.OnDeath -= Death;
         }
 
-        public void Die()
+        public void Death()
         {
-            StartCoroutine(Death());
+            StartCoroutine(Die());
         }
 
-        private IEnumerator Death()
+        private IEnumerator Die()
         {
+            _circleCollider2D.enabled = false;
             _characterBehaviour.StopLife();
             _animationManager.PlayDeath();
             yield return new WaitForSeconds(3f);

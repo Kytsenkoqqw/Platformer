@@ -41,7 +41,7 @@ public class HealthSystem : MonoBehaviour
         
         if (TryGetComponent<IDieable>(out var dieable))
         {
-            dieable.Die();
+            dieable.Death();
         }
     }
 }

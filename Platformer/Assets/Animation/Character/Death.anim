@@ -32,20 +32,12 @@ AnimationClip:
       value: {fileID: 5554963566415947242, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - time: 0.41666666
       value: {fileID: -5963140705259425874, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - time: 0.48333332
-      value: {fileID: 9088972500647621606, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - time: 0.56666666
       value: {fileID: 7885989501681126501, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - time: 0.6333333
-      value: {fileID: -8840018176642514470, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - time: 0.71666664
       value: {fileID: -1222796234334387562, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - time: 0.78333336
-      value: {fileID: 4426567922449804684, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - time: 0.8666667
       value: {fileID: -6766178064038952303, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - time: 0.93333334
-      value: {fileID: -3090397374096847174, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - time: 1.0166667
       value: {fileID: 4327789709236471517, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - time: 1.0833334
@@ -88,13 +80,9 @@ AnimationClip:
     - {fileID: -9061585915707981762, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: 5554963566415947242, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: -5963140705259425874, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - {fileID: 9088972500647621606, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: 7885989501681126501, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - {fileID: -8840018176642514470, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: -1222796234334387562, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - {fileID: 4426567922449804684, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: -6766178064038952303, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
-    - {fileID: -3090397374096847174, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: 4327789709236471517, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: -3068285205281089956, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - {fileID: -2482386761079546984, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
