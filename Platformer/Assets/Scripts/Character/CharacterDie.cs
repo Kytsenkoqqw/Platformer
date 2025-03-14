@@ -36,8 +36,8 @@ namespace Character
 
         private IEnumerator Die()
         {
-            _circleCollider2D.enabled = false;
             _characterBehaviour.StopLife();
+            _circleCollider2D.enabled = false;
             _animationManager.PlayDeath();
             yield return new WaitForSeconds(3f);
             Destroy(gameObject);

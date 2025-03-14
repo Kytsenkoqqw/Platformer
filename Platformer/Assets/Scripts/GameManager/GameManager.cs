@@ -1,4 +1,5 @@
 using System;
+using Animation;
 using DG.Tweening;
 using TMPro;
 using Unity.VisualScripting;
@@ -9,8 +10,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+   //AnimationManager
+   [SerializeField] private AnimationManager _animationManager;
+   
+   
    //Sound
    [SerializeField] private AudioSource _ambientForest;
+   [SerializeField] private AudioSource _breathSound;
+   
 
    //GameMenu
    [SerializeField] private GameObject _pauseMenu;
@@ -26,10 +33,28 @@ public class GameManager : MonoBehaviour
   // [SerializeField] private TextMeshProUGUI _messageText;
    [SerializeField] private Transform _cameraTransform;
    
+   //Character
+   [SerializeField] private Sprite _lyingSprite;
+   [SerializeField] private Sprite _charactercSprite;
+   [SerializeField] private CircleCollider2D _characterCircleCollider2D;
+   [SerializeField] private SpriteRenderer _spriteRenderer;
+   
    
    private void Start()
    {
       _ambientForest.Play();
+      _breathSound.Play();
+      _spriteRenderer.sprite = _lyingSprite;
+      _animationManager.OffAllAnimation();
+      _characterCircleCollider2D.enabled = false;
+   }
+
+   private void Update()
+   {
+      if (Input.GetKeyDown(KeyCode.G))
+      {
+         _spriteRenderer.sprite = _charactercSprite;
+      }
    }
 
    public void RestartGame()

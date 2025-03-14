@@ -44,8 +44,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/NewPositionCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/TransitionToLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/ShowTransitionToLocationPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
@@ -54,6 +52,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/ChekScreenBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightBreathEffect.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +124,8 @@
       <workItem from="1741619803359" duration="876000" />
       <workItem from="1741689620597" duration="7616000" />
       <workItem from="1741781279864" duration="5427000" />
-      <workItem from="1741950487991" duration="2604000" />
+      <workItem from="1741950487991" duration="3196000" />
+      <workItem from="1741960213164" duration="2482000" />
     </task>
     <servers />
   </component>

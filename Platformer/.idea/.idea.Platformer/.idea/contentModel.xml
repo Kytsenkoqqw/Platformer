@@ -84,6 +84,7 @@
             <e p="HealthSystem.cs" t="Include" />
           </e>
           <e p="Light" t="Include">
+            <e p="LightBreathEffect.cs" t="Include" />
             <e p="LightFollow.cs" t="Include" />
           </e>
           <e p="ObjectBehaviour" t="Include">

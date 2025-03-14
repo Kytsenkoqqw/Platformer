@@ -35,5 +35,10 @@ namespace Animation
         {
             _animator.SetTrigger("Death");
         }
+
+        public void OffAllAnimation()
+        {
+            _animator.enabled = false;
+        }
     }
 }
