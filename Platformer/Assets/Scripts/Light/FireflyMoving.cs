@@ -12,7 +12,6 @@ public class FireflyMoving : MonoBehaviour
       StartCoroutine(StartMove());
    }
 
-
    private IEnumerator StartMove()
    {
       yield return new WaitForSeconds(2f);

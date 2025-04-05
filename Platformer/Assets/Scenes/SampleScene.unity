@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a52a2d8775d124bb3e3a08d47dcaed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _recoveryEffect: {fileID: 494262907}
   _animationManager: {fileID: 1355662989}
   _ambientForest: {fileID: 109201193}
   _breathSound: {fileID: 109201196}
@@ -272,7 +273,6 @@ MonoBehaviour:
   _soundToggle: {fileID: 1369140008}
   _transitionToLocationPanel: {fileID: 931933690}
   _cameraTransform: {fileID: 519420032}
-  _lyingSprite: {fileID: 4327789709236471517, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
   _charactercSprite: {fileID: 3985284202397769235, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
   _characterCircleCollider2D: {fileID: 1355662998}
   _spriteRenderer: {fileID: 1355663004}
@@ -6996,6 +6996,7 @@ GameObject:
   - component: {fileID: 494262905}
   - component: {fileID: 494262904}
   - component: {fileID: 494262906}
+  - component: {fileID: 494262907}
   m_Layer: 0
   m_Name: 'Firefly '
   m_TagString: Untagged
@@ -7087,6 +7088,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 1110760585}
+--- !u!114 &494262907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494262903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dcce2b9e52343e785e2ad0a37c67c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterTransform: {fileID: 1110760585}
+  _light: {fileID: 1629186314}
+  _speed: 10
+  _intensitySpeed: 5
 --- !u!1 &514038392
 GameObject:
   m_ObjectHideFlags: 0
@@ -13591,7 +13608,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355662966}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -15188,6 +15205,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 60612251171255620, guid: e5b52517a8de5114a8790150b89dd3c5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4327789709236471517, guid: 4755c55ed48284e4ea876514e7af05be, type: 3}
     - target: {fileID: 70997658038521344, guid: e5b52517a8de5114a8790150b89dd3c5, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -15218,7 +15239,7 @@ PrefabInstance:
       objectReference: {fileID: 1516699776}
     - target: {fileID: 2404583130389668577, guid: e5b52517a8de5114a8790150b89dd3c5, type: 3}
       propertyPath: _maxHealth
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4807407360319749705, guid: e5b52517a8de5114a8790150b89dd3c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15226,7 +15247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4807407360319749705, guid: e5b52517a8de5114a8790150b89dd3c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6287904
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4807407360319749705, guid: e5b52517a8de5114a8790150b89dd3c5, type: 3}
       propertyPath: m_LocalPosition.z

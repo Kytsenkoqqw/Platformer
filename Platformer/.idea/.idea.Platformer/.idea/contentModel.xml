@@ -85,6 +85,7 @@
           </e>
           <e p="Light" t="Include">
             <e p="FireflyMoving.cs" t="Include" />
+            <e p="FireflyRecoveryEffect.cs" t="Include" />
             <e p="LightBreathEffect.cs" t="Include" />
             <e p="LightFollow.cs" t="Include" />
           </e>

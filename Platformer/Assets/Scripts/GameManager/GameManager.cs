@@ -1,6 +1,7 @@
 using System;
 using Animation;
 using DG.Tweening;
+using Light;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,6 +11,10 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+
+   [SerializeField] private FireflyRecoveryEffect _recoveryEffect;
+
+   
    //AnimationManager
    [SerializeField] private AnimationManager _animationManager;
    
@@ -34,7 +39,6 @@ public class GameManager : MonoBehaviour
    [SerializeField] private Transform _cameraTransform;
    
    //Character
-   [SerializeField] private Sprite _lyingSprite;
    [SerializeField] private Sprite _charactercSprite;
    [SerializeField] private CircleCollider2D _characterCircleCollider2D;
    [SerializeField] private SpriteRenderer _spriteRenderer;
@@ -44,9 +48,8 @@ public class GameManager : MonoBehaviour
    {
       _ambientForest.Play();
       _breathSound.Play();
-      _spriteRenderer.sprite = _lyingSprite;
       _animationManager.OffAllAnimation();
-      _characterCircleCollider2D.enabled = false;
+      _recoveryEffect.OnRecovery += Recovery;
    }
 
    private void Update()
@@ -55,6 +58,18 @@ public class GameManager : MonoBehaviour
       {
          _spriteRenderer.sprite = _charactercSprite;
       }
+   }
+
+   private void OnDestroy()
+   {
+      _recoveryEffect.OnRecovery -= Recovery;
+   }
+
+   private void Recovery()
+   {
+      _spriteRenderer.sprite = _charactercSprite;
+      _characterCircleCollider2D.enabled = true;
+      _animationManager.OnAllAnimation();
    }
 
    public void RestartGame()

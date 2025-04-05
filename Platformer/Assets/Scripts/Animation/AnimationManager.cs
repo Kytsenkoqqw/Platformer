@@ -40,5 +40,10 @@ namespace Animation
         {
             _animator.enabled = false;
         }
+
+        public void OnAllAnimation()
+        {
+            _animator.enabled = true;
+        }
     }
 }

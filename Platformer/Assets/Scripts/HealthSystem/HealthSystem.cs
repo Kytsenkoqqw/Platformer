@@ -9,20 +9,20 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] private float _maxHealth;
     [SerializeField] private Image _hp;
     
-    public float _currentHeath;
+    public float currentHeath;
 
     private void Start()
     {
-        _currentHeath = _maxHealth;
+        currentHeath = _maxHealth;
     }
 
     public void TakeDamage(float damage)
     {
-        _currentHeath -= damage;
+        currentHeath -= damage;
 
-        if (_currentHeath <= 0)
+        if (currentHeath <= 0)
         {
-            _currentHeath = 0;
+            currentHeath = 0;
             Die();
         }
         
@@ -31,7 +31,7 @@ public class HealthSystem : MonoBehaviour
 
     public void ValueHealthChanged()
     {
-        float fillAmount = (float)_currentHeath / _maxHealth;
+        float fillAmount = (float)currentHeath / _maxHealth;
         _hp.fillAmount = fillAmount;
     }
 

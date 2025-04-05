@@ -49,13 +49,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IDieable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/ChekScreenBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightBreathEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/FireflyMoving.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/FireflyRecoveryEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightBreathEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Light/FireflyMoving.cs" />
       </list>
     </option>
   </component>
@@ -127,7 +128,8 @@
       <workItem from="1741781279864" duration="5427000" />
       <workItem from="1741950487991" duration="3196000" />
       <workItem from="1741960213164" duration="3096000" />
-      <workItem from="1743693199972" duration="1297000" />
+      <workItem from="1743693199972" duration="1748000" />
+      <workItem from="1743852576485" duration="3307000" />
     </task>
     <servers />
   </component>
