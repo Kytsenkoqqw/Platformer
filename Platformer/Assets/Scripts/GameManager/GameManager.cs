@@ -21,8 +21,6 @@ public class GameManager : MonoBehaviour
    
    //Sound
    [SerializeField] private AudioSource _ambientForest;
-   [SerializeField] private AudioSource _breathSound;
-   
 
    //GameMenu
    [SerializeField] private GameObject _pauseMenu;
@@ -47,9 +45,9 @@ public class GameManager : MonoBehaviour
    private void Start()
    {
       _ambientForest.Play();
-      _breathSound.Play();
       _animationManager.OffAllAnimation();
       _recoveryEffect.OnRecovery += Recovery;
+      Debug.Log(Application.persistentDataPath);
    }
 
    private void Update()

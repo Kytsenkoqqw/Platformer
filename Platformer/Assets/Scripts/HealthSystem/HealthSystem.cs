@@ -1,4 +1,5 @@
 using System;
+using Character;
 using ObjectBehaviour;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,19 @@ public class HealthSystem : MonoBehaviour
     private void Start()
     {
         currentHeath = _maxHealth;
+        
+        ValueHealthChanged();
+    }
+
+    public void Heal(float heal)
+    {
+        currentHeath += heal;
+
+        if (currentHeath >= 100)
+        {
+            currentHeath = 100;
+        }
+        ValueHealthChanged();
     }
 
     public void TakeDamage(float damage)

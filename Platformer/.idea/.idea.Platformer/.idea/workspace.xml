@@ -9,8 +9,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@578c7061e96d/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealFlask.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@38fdc9b96878/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ShowTransitionToLocationPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Json/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPS/FPSCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,19 +46,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/NewPositionCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/TransitionToLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/ShowTransitionToLocationPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterJumping.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectBehaviour/IDieable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/ChekScreenBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterDie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightBreathEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/FireflyMoving.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light/FireflyRecoveryEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation/AnimationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Json/SaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Light/LightBreathEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealFlask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthSystem/HealthSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterAttack.cs" />
       </list>
     </option>
   </component>
@@ -129,7 +134,8 @@
       <workItem from="1741950487991" duration="3196000" />
       <workItem from="1741960213164" duration="3096000" />
       <workItem from="1743693199972" duration="1748000" />
-      <workItem from="1743852576485" duration="3307000" />
+      <workItem from="1743852576485" duration="3902000" />
+      <workItem from="1744019923072" duration="6091000" />
     </task>
     <servers />
   </component>
